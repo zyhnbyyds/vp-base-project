@@ -1,13 +1,13 @@
 <template>
   <section class="mx-auto flex min-h-screen max-w-6xl items-center px-6 py-16 md:px-12">
     <div class="grid w-full gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
-      <div class="space-y-6">
+      <div class="space-y-3">
         <p
           class="inline-flex rounded-full border border-cyan-500/40 bg-cyan-50 px-3 py-1 text-xs tracking-widest text-cyan-700 uppercase dark:border-cyan-400/40 dark:bg-cyan-400/10 dark:text-cyan-200"
         >
           Vue 3 + Vite+
         </p>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-3">
           <TechBadge label="Vue Router" />
           <TechBadge label="UnoCSS" />
           <TechBadge label="unplugin" />

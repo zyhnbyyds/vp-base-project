@@ -23,11 +23,11 @@ export default defineConfig({
     UnoCSS(),
     AutoImport({
       imports: ['vue', 'vue-router'],
-      dts: 'src/auto-imports.d.ts',
+      dts: 'src/types/auto-imports.d.ts',
       vueTemplate: true,
     }),
     Components({
-      dts: 'src/components.d.ts',
+      dts: 'src/types/components.d.ts',
     }),
   ],
 })

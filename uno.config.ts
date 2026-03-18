@@ -1,5 +1,11 @@
-import { defineConfig, presetUno } from 'unocss'
+import { defineConfig, presetWind4, presetAttributify, presetTypography } from 'unocss'
 
 export default defineConfig({
-  presets: [presetUno({ dark: 'media' })],
+  presets: [
+    presetWind4({
+      preflights: { reset: true },
+    }),
+    presetAttributify(),
+    presetTypography(),
+  ],
 })

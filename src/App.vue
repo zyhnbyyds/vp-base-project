@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="min-h-screen bg-slate-950 text-slate-100">
+  <main class="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
     <RouterView />
   </main>
 </template>

@@ -3,7 +3,7 @@
     <div class="grid w-full gap-10 md:grid-cols-[1.2fr_1fr] md:items-center">
       <div class="space-y-6">
         <p
-          class="inline-flex rounded-full border border-cyan-400/40 bg-cyan-400/10 px-3 py-1 text-xs tracking-widest text-cyan-200 uppercase"
+          class="inline-flex rounded-full border border-cyan-500/40 bg-cyan-50 px-3 py-1 text-xs tracking-widest text-cyan-700 uppercase dark:border-cyan-400/40 dark:bg-cyan-400/10 dark:text-cyan-200"
         >
           Vue 3 + Vite+
         </p>
@@ -12,21 +12,26 @@
           <TechBadge label="UnoCSS" />
           <TechBadge label="unplugin" />
         </div>
-        <h1 class="text-4xl leading-tight font-black tracking-tight text-white md:text-6xl">
+        <h1
+          class="text-4xl leading-tight font-black tracking-tight text-slate-900 md:text-6xl dark:text-white"
+        >
           Modern Frontend Starter
         </h1>
-        <p class="max-w-xl text-base leading-7 text-slate-300 md:text-lg">
+        <p class="max-w-xl text-base leading-7 text-slate-600 md:text-lg dark:text-slate-300">
           This project now uses Vue Router, UnoCSS, and unplugin automation. Start building screens
-          in <code class="rounded bg-slate-800 px-1.5 py-1 text-sm">src/pages</code> and reusable
-          components in
-          <code class="rounded bg-slate-800 px-1.5 py-1 text-sm">src/components</code>.
+          in
+          <code class="rounded bg-slate-100 px-1.5 py-1 text-sm dark:bg-slate-800">src/pages</code>
+          and reusable components in
+          <code class="rounded bg-slate-100 px-1.5 py-1 text-sm dark:bg-slate-800"
+            >src/components</code
+          >.
         </p>
         <div class="flex flex-wrap gap-3">
           <a
             href="https://router.vuejs.org/"
             target="_blank"
             rel="noreferrer"
-            class="rounded-md border border-slate-700 bg-slate-900 px-4 py-2 text-sm text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
+            class="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-cyan-400 dark:hover:text-cyan-200"
           >
             Vue Router Docs
           </a>
@@ -34,7 +39,7 @@
             href="https://unocss.dev/"
             target="_blank"
             rel="noreferrer"
-            class="rounded-md border border-slate-700 bg-slate-900 px-4 py-2 text-sm text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
+            class="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm text-slate-700 transition hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:border-cyan-400 dark:hover:text-cyan-200"
           >
             UnoCSS Docs
           </a>
@@ -42,24 +47,24 @@
       </div>
 
       <div
-        class="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-900 to-cyan-950/40 p-6 shadow-2xl shadow-cyan-900/20"
+        class="rounded-2xl border border-slate-200 bg-gradient-to-br from-white via-white to-cyan-50 p-6 shadow-xl shadow-cyan-100/40 dark:border-slate-800 dark:from-slate-900 dark:via-slate-900 dark:to-cyan-950/40 dark:shadow-cyan-900/20"
       >
-        <h2 class="mb-4 text-lg font-semibold text-white">Stack Ready</h2>
-        <ul class="space-y-2 text-sm text-slate-300">
+        <h2 class="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Stack Ready</h2>
+        <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-300">
           <li class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-cyan-300"></span>
+            <span class="h-2 w-2 rounded-full bg-cyan-500 dark:bg-cyan-300"></span>
             Vue 3 + TypeScript
           </li>
           <li class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-cyan-300"></span>
+            <span class="h-2 w-2 rounded-full bg-cyan-500 dark:bg-cyan-300"></span>
             Vue Router 4/5 API
           </li>
           <li class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-cyan-300"></span>
+            <span class="h-2 w-2 rounded-full bg-cyan-500 dark:bg-cyan-300"></span>
             UnoCSS utility engine
           </li>
           <li class="flex items-center gap-2">
-            <span class="h-2 w-2 rounded-full bg-cyan-300"></span>
+            <span class="h-2 w-2 rounded-full bg-cyan-500 dark:bg-cyan-300"></span>
             unplugin auto-import/components
           </li>
         </ul>

@@ -2,59 +2,51 @@
  * useTheme - Composable for theme management
  */
 
-import { computed, ref } from 'vue'
-import { useStorage } from '@vueuse/core'
+import { computed } from 'vue'
+import { createGlobalState, useColorMode, usePreferredDark } from '@vueuse/core'
 
 export type ThemeMode = 'light' | 'dark' | 'auto'
 
-export function useTheme() {
-  const themeMode = useStorage<ThemeMode>('theme-mode', 'auto')
-  const isDark = ref(false)
+const useThemeState = createGlobalState(() => {
+  // Keep class-based dark mode in sync with persisted user preference.
+  const themeMode = useColorMode<ThemeMode>({
+    attribute: 'class',
+    selector: 'html',
+    storageKey: 'theme-mode',
+    initialValue: 'auto',
+    modes: {
+      light: 'light',
+      dark: 'dark',
+      auto: '',
+    },
+  })
+  const preferredDark = usePreferredDark()
 
-  // Check system preference on mount
-  const initTheme = () => {
-    if (themeMode.value === 'auto') {
-      isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches
-    } else {
-      isDark.value = themeMode.value === 'dark'
-    }
-    applyTheme()
-  }
-
-  const applyTheme = () => {
-    const html = document.documentElement
-    if (isDark.value) {
-      html.classList.add('dark')
-    } else {
-      html.classList.remove('dark')
-    }
-  }
+  const isDark = computed(
+    () => themeMode.value === 'dark' || (themeMode.value === 'auto' && preferredDark.value),
+  )
 
   const toggleTheme = () => {
-    isDark.value = !isDark.value
-    if (isDark.value) {
-      themeMode.value = 'dark'
-    } else {
-      themeMode.value = 'light'
-    }
-    applyTheme()
+    themeMode.value = isDark.value ? 'light' : 'dark'
   }
 
   const setTheme = (mode: ThemeMode) => {
     themeMode.value = mode
-    if (mode === 'auto') {
-      isDark.value = window.matchMedia('(prefers-color-scheme: dark)').matches
-    } else {
-      isDark.value = mode === 'dark'
-    }
-    applyTheme()
+  }
+
+  const initTheme = () => {
+    // useColorMode applies the class eagerly; keep this for API compatibility.
   }
 
   return {
     themeMode,
-    isDark: computed(() => isDark.value),
+    isDark,
     toggleTheme,
     setTheme,
     initTheme,
   }
+})
+
+export function useTheme() {
+  return useThemeState()
 }

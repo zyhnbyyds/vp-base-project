@@ -11,8 +11,23 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AButton: typeof import('ant-design-vue/es')['Button']
+    ADropdown: typeof import('ant-design-vue/es')['Dropdown']
+    AMenu: typeof import('ant-design-vue/es')['Menu']
+    AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
+    Card: typeof import('./../components/common/Card.vue')['default']
+    EmptyState: typeof import('./../components/common/EmptyState.vue')['default']
+    ErrorState: typeof import('./../components/common/ErrorState.vue')['default']
+    FloatingActionButton: typeof import('./../components/ui/FloatingActionButton.vue')['default']
+    FloatingCard: typeof import('./../components/ui/FloatingCard.vue')['default']
+    Footer: typeof import('./../components/layout/Footer.vue')['default']
+    GradientCard: typeof import('./../components/ui/GradientCard.vue')['default']
+    Header: typeof import('./../components/layout/Header.vue')['default']
+    LoadingState: typeof import('./../components/common/LoadingState.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    StatCard: typeof import('./../components/ui/StatCard.vue')['default']
     TechBadge: typeof import('./../components/TechBadge.vue')['default']
+    WelcomeState: typeof import('./../components/common/WelcomeState.vue')['default']
   }
 }

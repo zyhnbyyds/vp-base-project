@@ -12,7 +12,7 @@ const year = new Date().getFullYear()
         <!-- Brand -->
         <div>
           <h3 class="font-bold text-lg mb-4">Vite+</h3>
-          <p class="text-sm text-slate-600 dark:text-slate-400">
+          <p class="text-sm text-slate-600 dark:text-slate-300">
             A professional, open-source template for building modern web applications
           </p>
         </div>
@@ -24,7 +24,7 @@ const year = new Date().getFullYear()
             <li>
               <a
                 href="#"
-                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition"
               >
                 Documentation
               </a>
@@ -32,7 +32,7 @@ const year = new Date().getFullYear()
             <li>
               <a
                 href="#"
-                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition"
               >
                 GitHub
               </a>
@@ -40,7 +40,7 @@ const year = new Date().getFullYear()
             <li>
               <a
                 href="#"
-                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition"
               >
                 Issues
               </a>
@@ -55,7 +55,7 @@ const year = new Date().getFullYear()
             <li>
               <a
                 href="#"
-                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition"
               >
                 Discussions
               </a>
@@ -63,7 +63,7 @@ const year = new Date().getFullYear()
             <li>
               <a
                 href="#"
-                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition"
               >
                 Contributing
               </a>
@@ -71,7 +71,7 @@ const year = new Date().getFullYear()
             <li>
               <a
                 href="#"
-                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
+                class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition"
               >
                 Code of Conduct
               </a>
@@ -85,13 +85,13 @@ const year = new Date().getFullYear()
           <div class="flex gap-3">
             <a
               href="#"
-              class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition"
+              class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition"
             >
               <i class="icon-[mdi--github]" />
             </a>
             <a
               href="#"
-              class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition"
+              class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-50 transition"
             >
               <i class="icon-[mdi--twitter]" />
             </a>
@@ -100,16 +100,16 @@ const year = new Date().getFullYear()
       </div>
 
       <!-- Divider -->
-      <div class="border-t dark:border-slate-700" />
+      <div class="border-t border-slate-200 dark:border-slate-700" />
 
       <!-- Bottom -->
       <div
-        class="flex flex-col md:flex-row justify-between items-center pt-6 text-sm text-slate-600 dark:text-slate-400"
+        class="flex flex-col md:flex-row justify-between items-center pt-6 text-sm text-slate-600 dark:text-slate-300"
       >
         <p>&copy; {{ year }} Vite+ Template. All rights reserved.</p>
         <div class="flex gap-6 mt-4 md:mt-0">
-          <a href="#" class="hover:text-slate-900 dark:hover:text-white transition">Privacy</a>
-          <a href="#" class="hover:text-slate-900 dark:hover:text-white transition">Terms</a>
+          <a href="#" class="hover:text-slate-900 dark:hover:text-slate-100 transition">Privacy</a>
+          <a href="#" class="hover:text-slate-900 dark:hover:text-slate-100 transition">Terms</a>
         </div>
       </div>
     </div>

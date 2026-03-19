@@ -1,4 +1,4 @@
-import { defineConfig, presetWind4, presetAttributify, presetTypography } from 'unocss'
+import { defineConfig, presetWind4, presetAttributify, presetTypography, presetIcons } from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -7,5 +7,9 @@ export default defineConfig({
     }),
     presetAttributify(),
     presetTypography(),
+    presetIcons({
+      scale: 1.2,
+      warn: true,
+    }),
   ],
 })

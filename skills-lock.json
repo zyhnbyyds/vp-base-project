@@ -11,11 +11,6 @@
       "sourceType": "github",
       "computedHash": "1cdc4bbecaa89544e6ef92566b015db989994bf90c4472683ac64f7a114dc3af"
     },
-    "vitepress": {
-      "source": "antfu/skills",
-      "sourceType": "github",
-      "computedHash": "a8aa9c4c23b88c5f6ff59159d8dd0678c8c87ae28bab19b4e84fa399022ce5ce"
-    },
     "vue": {
       "source": "antfu/skills",
       "sourceType": "github",

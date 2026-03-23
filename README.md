@@ -1,6 +1,6 @@
 # Vite Plus Init
 
-A production-ready Vue 3 starter powered by Vite+, with TypeScript, UnoCSS, Ant Design Vue, VueUse, and VitePress documentation.
+A production-ready Vue 3 starter powered by Vite+, with TypeScript, UnoCSS, Ant Design Vue, and VueUse.
 
 ## Features
 
@@ -10,7 +10,6 @@ A production-ready Vue 3 starter powered by Vite+, with TypeScript, UnoCSS, Ant 
 - UnoCSS with icons preset
 - Auto import for Vue, Vue Router, VueUse APIs
 - Auto component registration (including Ant Design Vue resolver)
-- VitePress documentation site
 - GitHub Pages deployment workflows
 
 ## Tech Stack
@@ -21,7 +20,6 @@ A production-ready Vue 3 starter powered by Vite+, with TypeScript, UnoCSS, Ant 
 - UI Library: Ant Design Vue
 - Styling: UnoCSS
 - Utilities: VueUse, Axios, Day.js, clsx
-- Docs: VitePress
 - Toolchain: Vite+
 
 ## Quick Start
@@ -56,14 +54,6 @@ vp build
 vp preview
 ```
 
-## Documentation Commands
-
-```bash
-pnpm run docs:dev
-pnpm run docs:build
-pnpm run docs:preview
-```
-
 ## Project Structure
 
 ```text
@@ -82,7 +72,6 @@ pnpm run docs:preview
 │  ├─ types/
 │  └─ utils/
 ├─ docs/
-│  ├─ .vitepress/
 │  ├─ api/
 │  ├─ components/
 │  └─ guide/
@@ -104,24 +93,11 @@ Theme state is managed in src/composables/useTheme.ts using VueUse global state.
 
 This guarantees custom UnoCSS dark styles and Ant Design Vue component themes switch together.
 
-## VitePress Documentation
-
-Documentation source is in docs/.
-
-- Home: docs/index.md
-- Guides: docs/guide/
-- Components: docs/components/
-- API: docs/api/
-- Config: docs/.vitepress/config.ts
-
-Build output is generated to docs/.vitepress/dist.
-
 ## GitHub Pages Deployment
 
 Current workflow files:
 
 - .github/workflows/deploy-pages.yml
-- .github/workflows/deploy-docs.yml
 - .github/workflows/deploy-app.yml
 
 Recommended setup:

@@ -98,7 +98,6 @@ This guarantees custom UnoCSS dark styles and Ant Design Vue component themes sw
 Current workflow files:
 
 - .github/workflows/deploy-pages.yml
-- .github/workflows/deploy-app.yml
 
 Recommended setup:
 
